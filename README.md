@@ -26,7 +26,6 @@ Open navigation.launch in second terminal:
 source devel/setup.bash
 export TURTLEBOT3_MODEL=waffle_pi
 roslaunch udm_seekcha_square_move turtlebot3_navigation.launch map_file:=$HOME/map.yaml
-
 ```
 
 Open navigation.launch in third terminal:
@@ -34,7 +33,6 @@ Open navigation.launch in third terminal:
 source devel/setup.bash
 export TURTLEBOT3_MODEL=waffle_pi
 rosrun udm_seekcha_square_move movebase_square.py
-
 ```
 
 
