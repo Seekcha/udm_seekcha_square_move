@@ -17,12 +17,14 @@ source devel/setup.bash
 Open world.launch in first terminal:
 ```
 source devel/setup.bash
+export TURTLEBOT3_MODEL=waffle_pi
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
 Open navigation.launch in second terminal:
 ```
 source devel/setup.bash
+export TURTLEBOT3_MODEL=waffle_pi
 roslaunch udm_seekcha_square_move turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 
 ```
@@ -30,6 +32,7 @@ roslaunch udm_seekcha_square_move turtlebot3_navigation.launch map_file:=$HOME/m
 Open navigation.launch in third terminal:
 ```
 source devel/setup.bash
+export TURTLEBOT3_MODEL=waffle_pi
 rosrun udm_seekcha_square_move movebase_square.py
 
 ```
